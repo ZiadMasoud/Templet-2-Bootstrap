@@ -31,9 +31,9 @@
     <!-- Black Cover -->
     <div class="imgframe">
         <!-- Nav -->
-        <nav class="nav pt-4 pb-4 ps-4 pe-5 ms-5 me-0 justify-content-center align-items-center ">
+        <nav class="nav pt-3 ps-5 pe-5 pb-3 me-0 fixed-top ">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-body-transparent  navz">
+                <nav class="navbar navbar-expand-lg ">
                     <div class="container">
                         <!-- logo -->
                         <a class="navbar-brand fw-bold text-light float-start " href="#">DANIELS</a>
@@ -47,30 +47,30 @@
                         <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
                             <ul class="navbar-nav float-end ">
                                 <li class="nav-item navl ">
-                                    <a class="nav-link active text-light me-4" aria-current="page" href="Home">Home</a>
+                                    <a class="nav-link active text-light me-4" aria-current="page" href="#Home">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active text-light me-4" aria-current="page"
-                                        href="About">About</a>
+                                        href="#About">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active text-light me-4" aria-current="page"
-                                        href="Services">Services</a>
+                                        href="#Services">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active text-light me-4" aria-current="page"
-                                        href="Works">Works</a>
+                                        href="#Works">Works</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active text-light me-4" aria-current="page"
-                                        href="Clients">Clients</a>
+                                        href="#Clients">Clients</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active text-light me-4" aria-current="page" href="Team">Team</a>
+                                    <a class="nav-link active text-light me-4" aria-current="page" href="#Team">Team</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active text-light me-4" aria-current="page"
-                                        href="Contact">Contact</a>
+                                        href="#Contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -79,16 +79,17 @@
             </div>
         </nav>
         <!-- Header -->
-        <section id="home" class="header text-center " data-scroll-index="0" data-stellar-background-ratio="0.8"
-            id="scrollspyHeading1">
+        <section class="header text-center " data-scroll-index="0" data-stellar-background-ratio="0.8"
+            id="scrollspyHeading1" id="Home">
             <div class="container">
                 <div class="middle d-flex position-absolute top-50 start-50 translate-middle z-3 ">
                     <div class="row">
                         <div class="col">
                             <h5 class="fw-bold text-light">Hello</h5>
                             <h1 class="text-light mb-5 ">
-                                <span class="blc fw-lighter  ">I Am </span>
-                                <span class="is-visible f ">Larry Daniels</span>
+                                <span class="blc fw-lighter ">I Am </span>
+                                <span class="is-visible f change">
+                                </span>
                             </h1>
                             <div class="icons rounded-pill text-center position-relative  ">
                                 <a href="#0">
@@ -119,7 +120,7 @@
         </section>
     </div>
     <!-- About -->
-    <section class="about pt-5 pb-5 ">
+    <section class="about pt-5 pb-5 " id="About">
         <div class="container ">
             <div class="row">
                 <div class="col">
@@ -156,7 +157,7 @@
         </div>
     </section>
     <!-- Services -->
-    <section class="service pt-5 pb-5 " style="background-color: #f7f7f7;">
+    <section class="service pt-5 pb-5 " style="background-color: #f7f7f7;" id="Services">
         <div class="container">
             <div class="head d-flex justify-content-center pt-5 pb-5 mb-3">
                 <h3>Services.</h3>
@@ -226,7 +227,7 @@
         </div>
     </section>
     <!-- Portfolio -->
-    <section class="portfolio pt-5 pb-5 text-center ">
+    <section class="portfolio pt-5 pb-5 text-center " id="Works">
         <div class="container">
             <div class="head">
                 <h3>Portfolio.</h3>
@@ -314,7 +315,7 @@
         </div>
     </section>
     <!-- Test -->
-    <section class="test pt-5 pb-5 text-center " style="background-color: #f7f7f7;">
+    <section class="test pt-5 pb-5 text-center " style="background-color: #f7f7f7;" id="Clients">
         <div class="container">
             <div class="head">
                 <h3>Testimonials.</h3>
@@ -403,7 +404,7 @@
         </div>
     </section>
     <!-- Team -->
-    <section class="team pt-5 pb-5 text-center " style="background-color: #f7f7f7;">
+    <section class="team pt-5 pb-5 text-center " style="background-color: #f7f7f7;" id="Team">
         <div class="container">
             <div class="head mb-5 pb-5">
                 <h3>Our Team.</h3>
@@ -467,7 +468,7 @@
         </div>
     </section>
     <!-- contact us -->
-    <section class="contact pt-5 pb-5 text-center">
+    <section class="contact pt-5 pb-5 text-center" id="Contact">
         <div class="container">
             <div class="head">
                 <h3>Contact Us.</h3>
@@ -521,6 +522,15 @@
     </footer>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.change', {
+            strings: ['Designer', 'Developer', 'Larry Daniels'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>

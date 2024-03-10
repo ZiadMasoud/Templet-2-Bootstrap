@@ -13,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #343434;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -46,14 +47,10 @@ p {
   opacity: 0.65;
   z-index: 2;
 }
-.nav,
-.header {
-  background-color: transparent !important;
-  background-size: cover;
-}
 /* Nav */
-nav {
-  z-index: 4;
+nav , .navbar {
+  z-index: 3;
+  background-color: rgb(0, 0, 0);
 }
 .navl {
   font-weight: 600;
@@ -63,10 +60,6 @@ nav {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 10px;
-}
-.header h1 {
-  border-right: 1px solid white;
-  padding: 7px;
 }
 .header .col .icons a {
   text-decoration: none !important;
