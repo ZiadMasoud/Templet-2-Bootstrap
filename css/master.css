@@ -76,31 +76,94 @@ nav,
 /* About */
 .about img {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
-.about .img-hero{
+.about .container {
+  width: 1100px;
+}
+.about .img-hero {
   padding-left: 30px;
   padding-right: 0px;
+}
+.about h3 {
+  font-size: 30px;
+  font-weight: bolder;
 }
 .about .img-hero::after {
   content: "";
   width: 80%;
   height: 80%;
   position: absolute;
-  background-color: aqua;
-  left: -30px;
+  left: -10px;
   bottom: -30px;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;
   z-index: -1;
 }
-.about .bar h6{
+.about .bar h6 {
   padding: 10px;
   margin: 5px;
   position: absolute;
   font-size: 13px;
 }
-.about .bar .bar-1::after{
+.about .bar .progress {
+  height: 22px;
+  box-shadow: inset 1000px 110px 60px 1110px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.about .bar .bar-1::after {
   content: "95%";
+  position: absolute;
+  right: 40px;
+  top: 0px;
+}
+.about .bar .ba-2::after {
+  content: "85%";
+  position: absolute;
+  right: 130px;
+  top: 0px;
+}
+.about .bar .ba-3::after {
+  content: "90%";
+  position: absolute;
+  right: 67px;
+  top: 0px;
+}
+.about .botn .b-1 {
+  background-color: var(--hover-color);
+  padding: 10px 25px;
+}
+.about .botn .b-1:hover {
+  background-color: white;
+  color: var(--hover-color);
+  transition: 0.5s;
+}
+.about .botn .b-2 {
+  background-color: white;
+  color: var(--hover-color);
+  padding: 10px 25px;
+}
+.about .botn .b-2:hover {
+  background-color: var(--hover-color);
+  color: white;
+  transition: 0.5s;
+}
+/* Services */
+.service .head h3 {
+  font-size: 40px !important;
+  font-weight: 900px !important;
+  position: relative;
+}
+.service .head h3::before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -10px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-color: aqua;
+  background-repeat: repeat;
+  z-index: -1;
 }
