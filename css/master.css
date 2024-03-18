@@ -176,13 +176,14 @@ nav,
 }
 .service .head h3::before {
   content: "";
-  width: 80%;
+  display: block;
+  width: 100px;
   height: 80%;
   position: absolute;
   left: -10px;
   bottom: -30px;
   background-image: url(../imgs/dots.png);
-  background-color: aqua;
+  background-color: red;
   background-repeat: repeat;
   z-index: -1;
 }
