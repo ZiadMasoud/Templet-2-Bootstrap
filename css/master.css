@@ -8,6 +8,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -51,7 +53,22 @@ p {
 nav,
 .navbar {
   z-index: 3;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
+}
+.navbar-nav{
+  font-size: 13px;
+  font-weight:400px;
+}
+.navbar .navbar-nav > li > a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .navl {
   font-weight: 600;
@@ -152,8 +169,10 @@ nav,
 /* Services */
 .service .head h3 {
   font-size: 40px !important;
-  font-weight: 900px !important;
   position: relative;
+}
+.service .container{
+  width: 1100px;
 }
 .service .head h3::before {
   content: "";
@@ -167,3 +186,36 @@ nav,
   background-repeat: repeat;
   z-index: -1;
 }
+.service .card h6{
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 0px;
+}
+.service .row .col-md-4 .card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.service .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.service .card .svgz{
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.service .card:hover .svgz{
+  background-color: var(--hover-color);
+  color: white;
+  transition: .7s ease-in-out;
+}
+/* Portfolio */
