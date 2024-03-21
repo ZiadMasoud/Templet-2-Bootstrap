@@ -52,28 +52,34 @@ p {
 /* Nav */
 nav,
 .navbar {
-  z-index: 3;
+  z-index: 33;
   background-color: white;
 }
 .navbar-nav {
   font-size: 13px;
   font-weight: 400px;
 }
-.navbar .navbar-nav > li > a:after {
+/* .navbar .navbar-nav > li > a:after {
   content: "";
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #ff0000;
   position: absolute;
   bottom: 0;
   left: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
+} */
 .navl {
   font-weight: 600;
 }
-.navbar-brand a {
+.navbar ul a {
+  font-weight: 400;
+  color: var(--dark-color);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.navbar .navbar-brand {
   font-weight: 800;
   color: var(--dark-color);
   font-size: 18px;
@@ -309,16 +315,16 @@ nav,
   z-index: 2;
   transform: translateY(10px);
 }
-.portfolio .wh h6{
+.portfolio .wh h6 {
   transition: all 0.5s;
   transform: translateY(-15px);
 }
-.portfolio .wh.wh:hover h6{
+.portfolio .wh.wh:hover h6 {
   transform: translateY(0px);
 }
 .portfolio .wh:hover {
   opacity: 1;
-  transform: translateY( 0px);
+  transform: translateY(0px);
 }
 /* Testimonials */
 .test .head h3 {
@@ -341,6 +347,31 @@ nav,
   bottom: -10px;
   left: 0;
   z-index: -1;
+}
+.test img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.test h6 {
+  font-weight: 600;
+}
+.test .content span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.test .content p {
+  font-size: 17px;
+}
+.test .dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+}
+.test .dots .dot1 {
+  background-color: #869791 !important;
 }
 /* Numbers */
 
