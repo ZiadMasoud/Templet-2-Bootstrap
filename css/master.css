@@ -92,7 +92,7 @@ nav,
 }
 .navbar-nav .nav-link {
   position: relative;
-}
+} 
 .navbar-nav .nav-link::before {
   content: "";
   position: absolute;
